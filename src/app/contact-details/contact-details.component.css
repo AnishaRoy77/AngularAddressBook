@@ -1,0 +1,30 @@
+#contact-details1 {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    gap:5px;
+}
+.wholeContent{
+    display: flex;
+}
+.ebtn {
+    border:1px solid black;
+    margin-right: 10px;
+    background-color: rgb(9, 85, 206);
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    
+}
+
+.dbtn{
+    border:1px solid black;
+    margin-left: 10px;
+    background-color: rgb(9, 85, 206);
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
