@@ -1,0 +1,22 @@
+<div class="container">
+<div class="mainheadstart">
+  <h2>Contacts</h2>
+<main>
+  <div class="c-list">  
+    <ul class="items" id="contactsss">
+    
+    <li *ngFor="let contacts of contact" [ngClass]="{'selected': contact.id == selectedId}" (click)="onSelect(contacts.id)" [class.selected]="isSelected(contacts)">
+      <div class="clist-name">{{contacts.name}}</div><div class="clist-info">{{contacts.email}}<br>{{contacts.mobile}}</div>
+      </li>
+   </ul>
+  </div>
+  <div class="contact-details">
+    <router-outlet></router-outlet>
+  </div>
+  
+</main>
+</div>
+</div>
+
+
+

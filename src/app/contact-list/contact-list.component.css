@@ -1,0 +1,55 @@
+
+
+.mainheadstart h2 {
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 20px;
+    
+}
+
+main {
+    display:flex; /*contact details sidealong show krne k liye */
+    height: calc(100vh - 50px);
+   
+}
+.c-list{
+    margin-top: 10px;
+   /* margin-left:-180px;*/
+   margin-left: 20px;
+}
+.items{
+list-style: none;
+padding: 0;
+}
+li {
+    /* Adds space between each list item */
+    list-style: none;
+    padding: 10px;
+    border: 1.5px solid #ccc; /* Optional: add a border around each contact */
+    border-radius: 1px;
+    cursor: pointer;
+    width: 20em;
+    height: 7em;
+    
+    
+}
+
+
+.clist-name{
+    font-size: large;
+    font-weight: bolder;
+}
+.clist-info{
+    font-size: small;
+    
+}
+.contact-details{
+    width: 70%;
+    padding: 20px;
+   
+}
+.selected{
+    background-color: lightblue;
+    color: black;
+    
+}
