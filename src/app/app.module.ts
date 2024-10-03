@@ -6,9 +6,12 @@ import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { ModalEditFormComponent } from './modal-edit-form/modal-edit-form.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalAddFormComponent } from './modal-add-form/modal-add-form.component';
+
+import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
 
 
 @NgModule({
@@ -16,8 +19,8 @@ import { ModalAddFormComponent } from './modal-add-form/modal-add-form.component
     AppComponent,
     routingComponents,
     PageNotFoundComponent,
-   ModalEditFormComponent,
-    ModalAddFormComponent,
+    ContactFormComponent,
+  
   
   ],
   imports: [
@@ -29,7 +32,7 @@ import { ModalAddFormComponent } from './modal-add-form/modal-add-form.component
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ ModalEditFormComponent, ModalAddFormComponent ]
+  entryComponents: [ ContactFormComponent, ContactDetailsComponent ]
 
 })
 export class AppModule { }

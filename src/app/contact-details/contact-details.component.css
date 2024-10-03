@@ -5,26 +5,37 @@
     width: 100%;
     padding: 20px;
     overflow-y: auto;
-    gap:5px;
-}
-.wholeContent{
-    display: flex;
-}
-.ebtn {
-    border:1px solid black;
-    margin-right: 10px;
-    background-color: rgb(9, 85, 206);
-    color: white;
-    padding: 4px;
-    cursor: pointer;
-    
+    gap: 5px;
 }
 
-.dbtn{
-    border:1px solid black;
-    margin-left: 10px;
-    background-color: rgb(9, 85, 206);
-    color: white;
-    padding: 4px;
+.wholeContent {
+    display: flex;
+}
+
+.ebtn {
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
     cursor: pointer;
 }
+
+.ebtn:hover {
+    color: blue
+}
+
+.dbtn {
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+    cursor: pointer;
+}
+.dbtn:hover {
+    color: blue;
+
+}
+.ebtn i, .dbtn i{
+    color: black;
+}
+

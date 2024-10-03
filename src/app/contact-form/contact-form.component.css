@@ -1,0 +1,72 @@
+.close {
+  color: red;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+input {
+
+  display: inline;
+  width: 100%;
+  padding: 5px 5px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.danger {
+  color: red;
+}
+
+.save-btn {
+
+  background-color: rgb(11, 153, 11);
+  color: white;
+  border-color: green;
+  width: 100px;
+  padding: 5px;
+  font-size: medium;
+  margin-top: 40px;
+  margin-left: 50px;
+  border-radius: 6px;
+
+}
+
+.save-btn:hover {
+  background-color: rgb(74, 241, 74);
+  color: black
+}
+
+.cancel-btn {
+  background-color: rgb(11, 153, 11);
+  color: white;
+  border-color: green;
+  width: 100px;
+  padding: 5px;
+  font-size: medium;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(74, 241, 74);
+  color: black
+}
