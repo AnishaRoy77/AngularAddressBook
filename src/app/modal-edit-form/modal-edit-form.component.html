@@ -1,0 +1,52 @@
+<div class="modal-header">
+  <h4 class="modal-title">Edit Contact</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <form [formGroup]="form" (ngSubmit)="saveEditContact()">
+    <div class="form-group">
+      <label for="name">Name: *</label>
+      <input id="name" formControlName="name" type="text" class="form-control" />
+      <div *ngIf="form.get('name').invalid && form.get('name').touched" class="danger">
+        {{ getErrorMessage('name') }}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email: *</label>
+      <input id="email" formControlName="email" type="email" class="form-control" />
+      <div *ngIf="form.get('email').invalid && form.get('email').touched" class="danger">
+        {{ getErrorMessage('email') }}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile: *</label>
+      <input id="mobile" formControlName="mobile" type="text" class="form-control" />
+      <div *ngIf="form.get('mobile').invalid && form.get('mobile').touched" class="danger">
+        {{ getErrorMessage('mobile') }}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website:</label>
+      <input id="website" formControlName="website" type="url" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="address">Your Address:</label>
+      <textarea id="address" formControlName="address" class="form-control" rows="2"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button  type="submit" class="btn btn-primary" [disabled]="form.invalid" >
+        Save
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
