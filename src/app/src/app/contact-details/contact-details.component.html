@@ -1,0 +1,36 @@
+<div *ngIf="contact" id="contact-details1">
+    <div class="wholeContent">
+        <div class="details">
+            <div>
+                <span>
+                    <h2>{{contact.name}}</h2>
+                </span>
+            </div>
+            <div>
+                <label>Email : </label>
+                <span>{{contact.email}}</span>
+            </div>
+            <div>
+                <label>Mobile : </label>
+                <span>{{contact.mobile}}</span>
+            </div>
+            <div>
+                <label>Website : </label>
+                <span>{{contact.website}}</span>
+            </div>
+            <div>
+                <label>Address : </label>
+                <span>{{contact.address}}</span>
+            </div>
+        </div>
+        <div class="detailsbtn">
+            <button class="ebtn" (click)="openEditForm()">
+                <i class="fa fa-edit"></i> Edit <!-- Edit Icon -->
+            </button>
+            <button (click)="deleteContact(contact.id)" class="dbtn">
+                <i class="fa fa-trash"></i> Delete <!-- Delete Icon -->
+            </button>
+            <br />
+        </div>
+    </div>
+</div>

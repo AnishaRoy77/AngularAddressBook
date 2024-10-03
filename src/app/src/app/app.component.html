@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <header>
+    <h1 class="tophead">{{title}}</h1><!--using interpolation here-->
+  </header>
+  <nav class="navbar">
+    <div class="navbarbtn">
+      <div>
+        <a id="navBtn1" routerLink="/contacts">HOME</a>
+      </div>
+      <div>
+        <a (click)="openAddModal()" id="navBtn2">ADD</a>
+      </div>
+
+    </div>
+
+  </nav>
+</div>
+<router-outlet></router-outlet>

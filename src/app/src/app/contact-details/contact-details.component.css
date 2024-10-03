@@ -1,0 +1,41 @@
+#contact-details1 {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    gap: 5px;
+}
+
+.wholeContent {
+    display: flex;
+}
+
+.ebtn {
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.ebtn:hover {
+    color: blue
+}
+
+.dbtn {
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+    cursor: pointer;
+}
+.dbtn:hover {
+    color: blue;
+
+}
+.ebtn i, .dbtn i{
+    color: black;
+}
+
